@@ -10,6 +10,10 @@ class TwitterMessage extends React.Component {
     };
   }
 
+  updateMsg = event => {
+    console.log(this.state.maxChars)
+  }
+
   render() {
     return (
       <div>
