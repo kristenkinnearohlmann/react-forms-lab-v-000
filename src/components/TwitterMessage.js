@@ -11,10 +11,10 @@ class TwitterMessage extends React.Component {
   }
 
   updateMsg = event => {
-    event.persist()
+    const data = event.target
     this.setState(previousState => {
       return {
-        message: event.target.value,
+        message: data.value,
         chkChars: previousState.chkChars - 1
       }
     })
